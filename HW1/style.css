@@ -10,7 +10,7 @@ body {
 
 
 html {
-	background: url(orange.jpg) no-repeat center center fixed;
+	background: url("https://www.verifiedbusinesses.com.au/sites/default/files/listing_pics/photo%20-%20cocktails.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -32,6 +32,7 @@ header {
 	height: 50px;
 	position: fixed;
 	z-index: 10;
+	color: white;
 }
 
 header h1 {
@@ -40,6 +41,7 @@ header h1 {
 	margin:0;
 	padding:0;
 	float: left;
+	color: white;
 }
 
 header nav ul{
@@ -47,6 +49,7 @@ header nav ul{
 	margin:0;
 	padding:0;
 	background-color: solid orange;
+	color: white;
 }
 
 header nav li {
@@ -55,12 +58,13 @@ header nav li {
 	line-height: 50px;
 	width:120px;
 	display: inline-block;
+	color: white;
 }
 
 
 header nav a {
 	text-decoration: none;
-	color: #444;
+	color: white;
 	display: block; 
 	/*clickable area*/
 	text-align: center;
@@ -76,6 +80,7 @@ article {
 	width: 600px;
 	float: left;
 	padding: 50px;
+	color: orange;
 }
 
 aside nav{
@@ -89,7 +94,7 @@ ul.vertical-nav {
 }
 
 .vertical-nav li a{
-  color: black;
+  color: white;
   text-decoration: none;
   display: block;
   padding: 20px;
@@ -113,7 +118,9 @@ article.col-pixel section {
 	
 }
 
-
+footer {
+	color: white;
+}
 
 
 
