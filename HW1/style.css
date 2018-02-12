@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import 'main.css'
+
+
+/*font family: Kaushan Script cursive*/
+html,
+body {
+	margin: 0;
+}
+
+
+html {
+	background: url(orange.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.container {
+	width:900px;
+	margin: 0 auto;
+}
+
+
+
+/*Navbar*/
+
+header {
+	width: 80%;
+	padding: 0 10%;
+	height: 50px;
+	position: fixed;
+	background: url(cheap_diagonal_fabric.png);
+	z-index: 10;
+}
+
+header h1 {
+	display: inline-block;
+	color: solid orange;
+	font-family: "Kaushan Script", cursive;
+	margin:0;
+	padding:0;
+}
+
+nav ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	background-color: solid orange;
+}
+
+nav li {
+	font-family: "Kaushan Script", cursive;
+	height: 50px;
+	line-height: 50px;
+	width:120px;
+	display: inline-block;
+}
+
+
+nav a {
+	text-decoration: none;
+	color: #444;
+	display: block; 
+	/*clickable area*/
+	text-align: center;
+	transition: all 0.5s;
+}
+
+nav a:hover {
+	background-color: solid orange;
+	color:orange;
+}
+
+article {
+	width: 600px;
+	float: left;
+	padding: 10px;
+}
+
+
+
+article.col-pixel{
+	width: 960px;
+	margin: 0 auto;
+}
+
+article.col-pixel section {
+	width: 960px;
+	margin: 10px;
+	
+}
+
+
+
+aside nav{
+	width: 800px;
+
+}
+
+
+
+
