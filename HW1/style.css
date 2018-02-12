@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import 'main.css'
+
+
+/*font family: Kaushan Script cursive*/
+html,
+body {
+	margin: 0;
+}
+
+
+html {
+	background: url(orange.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.container {
+	width:900px;
+	margin: 0 auto;
+}
+
+
+
+/*Navbar*/
+
+header {
+	width: 80%;
+	padding: 0 10%;
+	height: 50px;
+	position: fixed;
+	z-index: 10;
+}
+
+header h1 {
+	display: inline-block;
+	font-family: "Kaushan Script", cursive;
+	margin:0;
+	padding:0;
+	float: left;
+}
+
+header nav ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	background-color: solid orange;
+}
+
+header nav li {
+	font-family: "Kaushan Script", cursive;
+	height: 50px;
+	line-height: 50px;
+	width:120px;
+	display: inline-block;
+}
+
+
+header nav a {
+	text-decoration: none;
+	color: #444;
+	display: block; 
+	/*clickable area*/
+	text-align: center;
+	transition: all 0.5s;
+}
+
+header nav a:hover {
+	background-color: solid orange;
+	color:orange;
+}
+
+article {
+	width: 600px;
+	float: left;
+	padding: 50px;
+}
+
+aside nav{
+	width: 300px;
+	float: right;
+	min-height: 430px;
+}
+ul.vertical-nav {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.vertical-nav li a{
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  background-color: orange;
+  text-align: center;
+}
+
+.vertical-nav li a:hover {
+  color: white;
+  background-color: orange;
+}
+
+article.col-pixel{
+	width: 960px;
+	margin: 0 auto;
+}
+
+article.col-pixel section {
+	width: 960px;
+	margin: 10px;
+	
+}
+
+
+
+
+
+
+
+
