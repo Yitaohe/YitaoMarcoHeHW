@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>About Page</title>
+		<!-- These are optional meta tags. These help with SEO -->
+		<meta name="description" content="About Page for website">
+		<meta name="keywords" content="Final">
+		<meta name="author" content="Marco He">
+		<link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<style>
+			hr {
+				display: block;
+				border-style: inset;
+				border-width: 3px;
+			}
+			
+			h1,
+			h2 {
+				text-align: center;
+				font-weight: bold;
+			}
+			
+			h3,
+			h5 {
+				text-align: center;
+				font-weight: normal;
+			}
+			.navbar-default { 
+				border-color: transparent; !important;
+				background-color: transparent; !important;
+			 }
+
+		</style>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdT8f0Gq6r3HjsgZFgavFYTGs6rPlgF04&callback=initMap"></script>
+
+		<script>
+		if(navigator.geolocation) { 
+				navigator.geolocation.getCurrentPosition(function(position) {
+						var coords = position.coords;
+						console.log(coords) 
+						var latlng = new google.maps.LatLng(coords.latitude, coords.longitude);
+						var myOptions = {
+							zoom: 14, 
+							center: latlng, 
+							mapTypeId: google.maps.MapTypeId.ROADMAP 
+						}; 
+						var map = new google.maps.Map(document.getElementById("map"), myOptions);
+						var marker = new google.maps.Marker({
+							position: latlng,  
+							map: map
+						});
+					},
+					function(error) { 
+						switch(error.code) {
+							case 1:
+								alert("Access rejected");
+								break;
+							case 2:
+								alert("The location is temporarily unavailable");
+								break;
+							case 3:
+								alert("Information timeout");
+								break;
+							default:
+								alert("Unknown error");
+								break;
+						}
+					});
+			} else {
+				alert("Your browser does not support the function!");
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: white">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+							<a class="navbar-brand zdy-pd5" href="#">
+								<img height="100%" src="img/logo.png" />
+							</a>
+						</div>
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<a href="About Page.html">About</a>
+								</li>
+								<li>
+									<a href="shop.html">Shop</a>
+								</li>
+								<li class="dropdown">
+									<a href="daily.html" class="dropdown-toggle" data-toggle="dropdown">Daily Dose<strong class="caret"></strong></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="daily.html">Culture</a>
+										</li>
+										<li>
+											<a href="daily.html">Music</a>
+										</li>
+										<li>
+											<a href="daily.html">People</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="media.html">Media</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+					<h1 class="zdy-mt80">ABOUT US</h1>
+					<hr class="zdy-W60" />
+					<h2>#1 WE ARE ALIENS</h2>
+					<br />
+					<h2>#2 WE ARE ALSO YOUR NEIGHBORS</h2>
+					<br />
+					<hr class="zdy-W50" />
+					<h3>People</h3>
+					<h3>Marco He - Curation</h3>
+					<h3>Ryan Yu - Creative</h3>
+					<h3>Michael Fang - Fashion</h3>
+					<h3>Hai Tran - Design</h3>
+					<h3>Marisa Lee - Video</h3>
+					<div class="row clearfix">
+						<div class="col-md-12 column">
+							<div id="map" style="width:100%;height:380px;"></div>
+						</div>
+					</div>
+					<address class="zdy-mt80"> <h5 align="center">@2017 MKL248</h5></address>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+</html>
